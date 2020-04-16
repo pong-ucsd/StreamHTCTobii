@@ -10,4 +10,7 @@ It sends:
 
 ![sample data](/LSLParser/Figure_1.png)Sample output from someone playing Beat Saber while the data was being recorded.
 
+## Build
+
+A built version is included in Build.7z that has all the libraries available. Note that to setup in a new project, you follow the [instructions by Tobii](https://vr.tobii.com/sdk/develop/unity/getting-started/vive-pro-eye/) and make the liblsl64.dll dll available to the executable, e.g., put it in <your_game_name>_Data/plugins.
 Note that you *should* be able to run this as a separate plugin from your other code: run the executable in Build.7z in parallel to any other game.
