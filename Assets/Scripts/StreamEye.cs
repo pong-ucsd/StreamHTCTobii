@@ -18,6 +18,7 @@ namespace ViveSR.anipal.Eye
 {
     public class StreamEye : MonoBehaviour
     {
+        //expect to adapt these to the needs of the individual games
         [Header("UI interactions")]
         public Toggle streaming;
         public Image lslStatus;
@@ -118,7 +119,7 @@ namespace ViveSR.anipal.Eye
             buffer[5] = eyeData.verbose_data.combined.eye_data.gaze_direction_normalized.y;
             buffer[6] = eyeData.verbose_data.combined.eye_data.gaze_direction_normalized.z;
             buffer[7] = eyeData.verbose_data.left.pupil_diameter_mm;
-            buffer[8] = eyeData.verbose_data.left.pupil_diameter_mm;
+            buffer[8] = eyeData.verbose_data.right.pupil_diameter_mm;
             soutlet.push_sample(buffer);
         }
     }
